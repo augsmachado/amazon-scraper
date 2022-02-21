@@ -1,0 +1,27 @@
+{
+  "name": "mern_solid_robot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/augsmachado/mern_solid_robot.git"
+  },
+  "keywords": [],
+  "author": "Augusto Machado",
+  "license": "CC0 1.0 Universal",
+  "bugs": {
+    "url": "https://github.com/augsmachado/mern_solid_robot/issues"
+  },
+  "homepage": "https://github.com/augsmachado/mern_solid_robot#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  }
+}
