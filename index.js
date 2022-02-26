@@ -5,10 +5,6 @@ const dotenv = require("dotenv");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// to dev use this
-//const apiKey = "...";
-//const baseUrl = `http://api.scraperapi.com?api_key=${apiKey}&autoparse=true`;
-
 // to deploy use this
 const generateScraperUrl = (apiKey) =>
 	`http://api.scraperapi.com?api_key=${apiKey}&autoparse=true`;
@@ -81,7 +77,7 @@ app.get("/search/:searchQuery", async (req, res) => {
 	try {
 		const response = await request(
 			`${generateScraperUrl(
-				api_key
+				apiKey
 			)}&url=https://www.amazon.com/s?k=${searchQuery}`
 		);
 
