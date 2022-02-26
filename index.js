@@ -1,6 +1,5 @@
 const express = require("express");
 const request = require("request-promise");
-const dotenv = require("dotenv");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
