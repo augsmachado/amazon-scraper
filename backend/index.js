@@ -3,7 +3,8 @@ import dotenv from "dotenv";
 
 import NodeCache from "node-cache";
 
-import { v4 as uuidv4 } from "uuid";
+import status from "./routes/status.routes.js";
+import products from "./routes/products.routes.js";
 
 // Define .env config
 dotenv.config();
@@ -27,27 +28,8 @@ const verifyCache = (req, res, next) => {
 
 app.use(express.json());
 
-// GET API status
-app.get("/status", (req, res) => {
-	try {
-		let response = {
-			msg: "Current API status",
-			name: process.env.API_NAME,
-			environment: process.env.API_ENVIRONMENT,
-			version: process.env.API_VERSION,
-			uptime: new Date().getTime(),
-			hash: uuidv4(),
-		};
-
-		res.json(response);
-	} catch (err) {
-		res.status(500).json({
-			error: "Unable to request API status",
-			details: `${err}`,
-		});
-	}
-});
-
+app.use("/", status);
+app.use("/products", verifyCache, products);
 app.use("*", (req, res) => {
 	res.status(400).json({ error: "Not route found" });
 });
