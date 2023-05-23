@@ -71,7 +71,7 @@ export default class ProductsController {
 	}
 
 	// GET product reviews
-	static async getReviewsByProdutId(req, res) {
+	static async getReviewsByProductId(req, res) {
 		const { product_id } = req.params;
 
 		const headers = req.headers["x-api-key"];
