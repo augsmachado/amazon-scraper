@@ -1,0 +1,31 @@
+{
+  "name": "data-scraper-amazon",
+  "version": "2.0.0",
+  "description": "Amazon Data Scraper is the easiest way to get access to product, price, sales rank and reviews data from Amazon in JSON format",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/augsmachado/nodejs_solid_robot.git"
+  },
+  "author": "Augusto Machado",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/augsmachado/nodejs_solid_robot/issues"
+  },
+  "homepage": "https://github.com/augsmachado/nodejs_solid_robot#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "node-cache": "^5.1.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
