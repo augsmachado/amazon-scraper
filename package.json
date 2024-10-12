@@ -20,7 +20,7 @@
   "homepage": "https://github.com/augsmachado/mern_solid_robot#readme",
   "dependencies": {
     "dotenv": "^16.0.0",
-    "express": "^4.17.3",
+    "express": "^4.21.1",
     "nodemon": "^2.0.15",
     "request": "^2.88.2",
     "request-promise": "^4.2.6"
